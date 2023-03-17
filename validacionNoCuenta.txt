@@ -1,0 +1,31 @@
+Proceso cajero
+	Definir cuenta,enter,contra, contranueva como caracter;
+	cuenta <- "";
+	contra<-"";
+	contranueva<-"";
+	Escribir "ingrese contraseña nueva";
+	leer contranueva;
+	mientras Longitud(cuenta)!=5 hacer
+		Borrar Pantalla;
+		Escribir "Ingrese No. de cuenta";
+		Leer cuenta;
+	si Longitud(cuenta)=5 Entonces
+		Escribir "Cuenta válida";
+		mientras contra!=contranueva hacer
+		Escribir "Ingrese contraseña";
+		leer contra;
+		si contra=contranueva Entonces
+			Escribir "Bienvenido usuario de 4 bach";
+		sino
+			Escribir "Contraseña incorrecta";
+		FinSi
+	FinMientras
+	Sino
+		Borrar Pantalla;
+		Escribir "Cuenta invalida!";
+		Escribir "Presione enter para continuar";
+		leer enter;
+	FinSi
+FinMientras
+	
+FinProceso
